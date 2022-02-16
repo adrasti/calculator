@@ -1,0 +1,114 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    text-align: center;
+    font-family: monospace;
+
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100wh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(154, 253, 253);
+}
+
+body *{
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+button {
+    border-radius: 5%;
+    border: none;
+    font-weight: initial;
+    font-size: 4em;
+    font-family: monospace;
+    color: black;
+    border-radius: 25px;
+    color: rgb(101, 177, 228);
+    background-color: rgb(45, 43, 46);
+}
+
+#container {
+    height: 80vh;
+    width: 80vh;
+    min-height: 400px;
+    min-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding: 2vh;
+    column-gap:1.5vh;
+    background-color: black;
+    row-gap:1.5vh;
+    border-radius: 25px;
+    overflow: hidden;
+}
+#screen{
+    grid-area: 1 / 1 / 1 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 5.5em;
+    font-weight: initial;
+    text-shadow: 1.3px 1.3px #383838;
+    margin: 5px;
+    color: white;
+}
+
+.operator{
+    background-color: rgb(29, 88, 199);
+}
+
+#equals{
+    background-color: rgb(69, 138, 230);
+    color: rgb(187, 225, 235);
+}
+
+#zero{
+    grid-area: 6 / 1 / 7 / 3;
+}
+
+#clear, #sign, #perc{
+    background-color: rgba(84, 93, 180, 0.664);
+}
+
+button#clear:active{
+    background-color: rgba(168, 176, 252, 0.664);
+}
+
+button#sign:active{
+    background-color: rgba(168, 176, 252, 0.664);
+}
+
+button#perc:active{
+    background-color: rgba(168, 176, 252, 0.664);
+}
+
+button#zero:active{
+    background-color: rgb(95, 93, 97);
+}
+
+button#dot:active{
+    background-color: rgb(95, 93, 97);
+}
+
+button#equals:active{
+    background-color: rgb(123, 180, 255);
+}
+button.operator:active{
+    background-color: rgb(104, 147, 228);
+}
+
+button.number:active{
+    background-color: rgb(95, 93, 97);
+}
